@@ -1,0 +1,57 @@
+:root{
+--accent:#c0392b;
+--dark:#111;
+--muted:#666;
+--container:1100px;
+font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+*{box-sizing:border-box}
+body{margin:0;color:var(--dark);line-height:1.5}
+.container{max-width:var(--container);margin:0 auto;padding:0 20px}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.logo{font-weight:700;text-decoration:none;color:var(--dark);font-size:22px}
+.logo span{color:var(--accent)}
+.main-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:18px}
+.main-nav a{text-decoration:none;color:var(--muted);font-weight:600}
+.btn-order{background:var(--accent);color:#fff;border:none;padding:8px 14px;border-radius:6px;cursor:pointer}
+.hero{padding:40px 0;background:linear-gradient(180deg,#fff 0%, #fff 60%)}
+.hero-inner{display:flex;gap:30px;align-items:center}
+.hero-copy h1{font-size:40px;margin:0 0 12px}
+.hero-copy p{margin:0 0 18px;color:var(--muted)}
+.btn-primary{display:inline-block;padding:10px 16px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700}
+.hero-image img{width:420px;max-width:100%;border-radius:12px;box-shadow:0 6px 24px rgba(0,0,0,0.12)}
+.section-title{text-align:center;font-size:28px;margin:32px 0}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:#fff;border-radius:12px;padding:12px;box-shadow:0 6px 18px rgba(0,0,0,0.06);text-align:center}
+.card img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+.card h3{margin:10px 0 6px}
+.card p{color:var(--muted);font-size:14px}
+.price{display:block;margin-top:8px;font-weight:700;color:var(--accent)}
+.about-teaser{padding:40px 0}
+.about-inner{display:flex;gap:22px;align-items:center}
+.about-inner img{width:320px;border-radius:10px}
+.site-footer{background:#f7f7f7;padding:28px 0;margin-top:28px}
+.footer-inner{display:flex;gap:20px}
+.footer-col{flex:1}
+.subscribe-form{display:flex;gap:8px}
+.subscribe-form input{flex:1;padding:8px;border-radius:6px;border:1px solid #ddd}
+.subscribe-form button{padding:8px 12px;border-radius:6px;background:var(--dark);color:#fff;border:none}
+.copyright{text-align:center;padding:12px 0;color:var(--muted);font-size:14px}
+
+
+/* Responsive */
+@media(max-width:900px){
+.grid{grid-template-columns:repeat(2,1fr)}
+.hero-inner{flex-direction:column;text-align:center}
+.about-inner{flex-direction:column}
+}
+@media(max-width:500px){
+.grid{grid-template-columns:1fr}
+.main-nav{display:none}
+.btn-order{display:none}
+}
+
+
+/* Small header variant */
+.site-header.small{padding:10px 0}
+.site-footer.small .footer-inner{flex-direction:column}

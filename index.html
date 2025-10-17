@@ -1,11 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
+html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>salt and paper</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Salt n Pepper - Clone</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+<header class="site-header">
+<div class="container header-inner">
+<a class="logo" href="index.html">Salt<span>n</span>Pepper</a>
+<nav class="main-nav">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<button class="btn-order">Order Now</button>
+</div>
+</header>
+
+
+<section class="hero">
+<div class="container hero-inner">
+<div class="hero-copy">
+<h1>Fresh. Tasty. Homemade.</h1>
+<p>Authentic Pakistani flavours, fast service — enjoy the best meals in town.</p>
+<a href="#menu" class="btn-primary">View Menu</a>
+</div>
+<div class="hero-image">
+<img src="assets/hero-placeholder.jpg" alt="Hero food" />
+</div>
+</div>
+</section>
+
+
+<section id="menu" class="menu">
+<div class="container">
+<h2 class="section-title">Popular Dishes</h2>
+<div class="grid">
+<article class="card">
+<img src="assets/dish1.jpg" alt="Dish 1">
+<h3>Chicken Biryani</h3>
+<p>Spiced basmati rice & tender chicken cooked to perfection.</p>
+<span class="price">PKR 850</span>
+</article>
+<article class="card">
+<img src="assets/dish2.jpg" alt="Dish 2">
+<h3>Seekh Kebab Platter</h3>
+<p>Grilled spiced mince kebabs served with chutney & naan.</p>
+<span class="price">PKR 650</span>
+</article>
+
+
+<article class="card">
+<img src="assets/dish3.jpg" alt="Dish 3">
+<h3>Karahi Gosht</h3>
+<p>Rich tomato-based curry with tender pieces of meat.</p>
+<span class="price">PKR 950</span>
+</article>
+
+
+<article class="card">
+<img src="assets/dish4.jpg" alt="Dish 4">
+<h3>Veg Platter</h3>
+<p>Assortment of house-made vegetable delights.</p>
+<span class="price">PKR 550</span>
+</article>
+</div>
+</div>
+</section>
+
+
+<section class="about-teaser">
+<div class="container">
+<div class="about-inner">
+<div>
+<h2>About Salt n Pepper</h2>
+<p>Salt n Pepper has been serving Lahore with quality ingredients and authentic recipes. We focus on taste, hygiene and fast delivery.</p>
+<a href="about.html" class="link-inline">Learn more →</a>
+</div>
+<img src="assets/about-thumb.jpg" alt="About thumbnail">
+</div>
+</div>
+</section>
+
+
+<footer id="contact" class="site-footer">
+<div class="container footer-inner">
+<div class="footer-col">
+<h4>Salt n Pepper</h4>
+<p>Main Street, Lahore<br>Phone: +92 300 0000000</p>
+</div>
+<div class="footer-col">
+<h4>Opening Hours</h4>
+<p>Mon–Sun: 11:00 AM — 11:00 PM</p>
+</div>
+<div class="footer-col">
+<h4>Subscribe</h4>
+<form class="subscribe-form">
+<input type="email" placeholder="Email address" />
+<button type="submit">Subscribe</button>
+</form>
+</div>
+</div>
+<div class="copyright">© <span id="year"></span> Salt n Pepper — All rights reserved.</div>
+</footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
